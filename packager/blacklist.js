@@ -15,7 +15,8 @@ var sharedBlacklist = [
   'website',
   'node_modules/react-tools/src/utils/ImmutableObject.js',
   'node_modules/react-tools/src/core/ReactInstanceHandles.js',
-  'node_modules/react-tools/src/event/EventPropagators.js'
+  'node_modules/react-tools/src/event/EventPropagators.js',
+  'node_modules/jest-cli'
 ];
 
 var platformBlacklists = {
