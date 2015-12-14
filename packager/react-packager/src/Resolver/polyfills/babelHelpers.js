@@ -217,4 +217,12 @@
       return Array.from(arr);
     }
   };
+
+  babelHelpers.taggedTemplateLiteral = function (strings, raw) {
+    return Object.freeze(Object.defineProperties(strings, {
+      raw: {
+        value: Object.freeze(raw)
+      }
+    }));
+  };
 })(typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : this);
